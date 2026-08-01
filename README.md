@@ -1,10 +1,15 @@
-# Security Operations Dashboard
+# 🛡️ Security Operations Dashboard
+
+**Enterprise SOC Simulator | Threat Detection | Incident Response | Security Analytics**
+
+---
 
 [![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/code/mrrogueknight/security-operations-dashboard)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MrRogueKnight/security-operations-dashboard)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mrrogueknight/)
 
 ---
 
@@ -14,7 +19,7 @@
 
 ---
 
-### 🎯 Project Overview
+## 🎯 Project Overview
 
 The **Security Operations Dashboard** is an educational cybersecurity project that simulates a complete Security Operations Center environment. It demonstrates the full security data pipeline – from synthetic log generation and threat detection to incident response and executive reporting.
 
@@ -22,80 +27,81 @@ This project was developed as the primary deliverable for an **8-week Ethical Ha
 
 ---
 
-### 🏗️ Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    DATA SOURCES (Synthetic)                     │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐         │
-│  │   Auth   │ │ Network  │ │  Malware │ │ Firewall │         │
-│  │   Logs   │ │ Traffic  │ │  Events  │ │   Logs   │         │
-│  └──────────┘ └──────────┘ └──────────┘ └──────────┘         │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    SQLITE DATABASE (10 Tables)                  │
-│  Assets │ Users │ Auth Logs │ Network Traffic │ Firewall Logs  │
-│  Malware Events │ Vulnerabilities │ Alerts │ Incidents │ Playbooks│
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                  THREAT DETECTION ENGINE (5 Rules)              │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐         │
-│  │  Brute   │ │Impossible│ │   Port   │ │  Malware │  SQL    │
-│  │  Force   │ │  Travel  │ │   Scan   │ │ Activity │Injection│
-│  └──────────┘ └──────────┘ └──────────┘ └──────────┘         │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                INCIDENT RESPONSE ENGINE (4 Playbooks)           │
-│  Detection → Analysis → Containment → Eradication → Recovery  │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│              VISUALIZATION DASHBOARD (9 Charts)                │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐         │
-│  │   Auth   │ │ Threat   │ │  Attack  │ │   Vuln   │         │
-│  │   Status │ │  Types   │ │ Timeline │ │ Severity │         │
-│  └──────────┘ └──────────┘ └──────────┘ └──────────┘         │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐         │
-│  │   MFA    │ │ Malware  │ │ Incident │ │  Asset   │  NIST   │
-│  │ Adoption │ │Detections│ │ Severity │ │Criticality│  CSF   │
-│  └──────────┘ └──────────┘ └──────────┘ └──────────┘         │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    EXECUTIVE SECURITY REPORT                    │
-│  • Security Metrics  • NIST CSF Assessment  • Recommendations  │
-└─────────────────────────────────────────────────────────────────┘
-```
-
----
-
-### 🔧 Features
+## ✨ Key Features
 
 | Feature | Description |
 | :--- | :--- |
-| 🔐 **SIEM-like Log Collection** | Generates 18,600+ synthetic security events (auth, network, malware, firewall) |
-| 🕵️ **Threat Detection Engine** | 5 detection rules mapped to MITRE ATT&CK framework |
-| 🚨 **Alert Generation** | 71+ alerts with severity classification |
-| 📋 **Incident Response** | 4 playbooks with full incident lifecycle (Detection → Recovery) |
-| 📊 **Analytics Dashboard** | 9 interactive visualizations for security posture analysis |
-| 📄 **Executive Reporting** | Auto-generated professional security reports with recommendations |
-| ✅ **Unit Testing** | 8 comprehensive tests ensuring system reliability |
-| 📐 **Framework Alignment** | NIST CSF, MITRE ATT&CK, OWASP Top 10, CISSP |
+| **SIEM-like Log Collection** | Generates 18,600+ synthetic security events (auth, network, malware, firewall) |
+| **Threat Detection Engine** | 5 detection rules mapped to MITRE ATT&CK framework |
+| **Alert Generation** | 71+ alerts with severity classification |
+| **Incident Response** | 4 playbooks with full incident lifecycle (Detection → Recovery) |
+| **Analytics Dashboard** | 9 interactive visualizations for security posture analysis |
+| **Executive Reporting** | Auto-generated professional security reports with recommendations |
+| **Unit Testing** | 8 comprehensive tests ensuring system reliability |
+| **Framework Alignment** | NIST CSF, MITRE ATT&CK, OWASP Top 10, CISSP |
 
 ---
 
-### 🛠️ Technologies Used
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+    A[Data Sources Synthetic] --> B[SQLite Database 10 Tables]
+    
+    B --> C[Threat Detection Engine 5 Rules]
+    C --> D[Alert Correlation]
+    D --> E[Incident Response 4 Playbooks]
+    E --> F[Visualization Dashboard 9 Charts]
+    F --> G[Executive Report]
+
+    subgraph B[Database Tables]
+        B1[Assets]
+        B2[Users]
+        B3[Auth Logs]
+        B4[Network Traffic]
+        B5[Firewall Logs]
+        B6[Malware Events]
+        B7[Vulnerabilities]
+        B8[Alerts]
+        B9[Incidents]
+        B10[Playbooks]
+    end
+
+    subgraph C[Detection Rules]
+        C1[Brute Force<br>T1110]
+        C2[Impossible Travel<br>T1078]
+        C3[Port Scanning<br>T1046]
+        C4[Malware Activity<br>T1203]
+        C5[SQL Injection<br>T1190]
+    end
+
+    subgraph E[Incident Response]
+        E1[Detection]
+        E2[Analysis]
+        E3[Containment]
+        E4[Eradication]
+        E5[Recovery]
+    end
+
+    subgraph F[Dashboard Charts]
+        F1[Authentication Status]
+        F2[Threat Type Distribution]
+        F3[Attack Timeline]
+        F4[Vulnerability Severity]
+        F5[MFA Adoption Rate]
+        F6[Malware Detections]
+        F7[Incident Severity]
+        F8[Asset Criticality]
+        F9[NIST CSF Assessment]
+    end
+```
+
+---
+
+## 🛠️ Technologies Used
 
 <div align="center">
-
+  
 | Category | Technologies |
 | :--- | :--- |
 | **Language** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
@@ -108,46 +114,46 @@ This project was developed as the primary deliverable for an **8-week Ethical Ha
 
 ---
 
-### 📁 Project Structure
+## 📁 Project Structure
 
 ```
 security-operations-dashboard/
 │
-├── security-operations-dashboard.ipynb   # Main Jupyter Notebook
-├── executive_security_report.txt         # Generated security report
-├── security_dashboard.png                # Dashboard visualization
-├── README.md                             # Project documentation
-└── LICENSE                               # MIT License
+├── 📓 security-operations-dashboard.ipynb   # Main Jupyter Notebook
+├── 📄 executive_security_report.txt         # Generated security report
+├── 🖼️ security_dashboard.png                # Dashboard visualization
+├── 📖 README.md                             # Project documentation
+└── 📜 LICENSE                               # MIT License
 ```
 
 ---
 
-### 🚀 Quick Start
+## 🚀 Quick Start
 
-#### 1. Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/MrRogueKnight/security-operations-dashboard.git
 cd security-operations-dashboard
 ```
 
-#### 2. Install Dependencies
+### 2. Install Dependencies
 ```bash
 pip install pandas numpy matplotlib seaborn sqlite3 bcrypt
 ```
 
-#### 3. Run the Notebook
+### 3. Run the Notebook
 ```bash
 jupyter notebook security-operations-dashboard.ipynb
 ```
 
-#### 4. Or Run on Kaggle
+### 4. Or Run on Kaggle
 Click the badge below to run directly on Kaggle:
 
 [![Kaggle](https://img.shields.io/badge/Run_on_Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/code/mrrogueknight/security-operations-dashboard)
 
 ---
 
-### 📊 Dashboard Preview
+## 📊 Dashboard Preview
 
 The dashboard includes 9 key visualizations:
 
@@ -165,24 +171,24 @@ The dashboard includes 9 key visualizations:
 
 ---
 
-### 🧪 Unit Tests
+## 🧪 Unit Tests
 
 8 comprehensive tests ensure system reliability:
 
-| Test | Description |
-| :--- | :--- |
-| ✅ Database Connection | Verifies database connection |
-| ✅ Schema Creation | All 10 tables created |
-| ✅ Data Population | Tables contain data |
-| ✅ Brute Force Detection | Detection logic validated |
-| ✅ Configuration | Config values correct |
-| ✅ Metrics Calculation | Security metrics computed |
-| ✅ Incident-Playbook Linkage | Proper relationships |
-| ✅ MITRE ATT&CK Mapping | Alerts have MITRE mapping |
+| Test | Status |
+| :--- | :---: |
+| Database Connection | Pass |
+| Schema Creation | Pass |
+| Data Population | Pass |
+| Brute Force Detection | Pass |
+| Configuration Validation | Pass |
+| Metrics Calculation | Pass |
+| Incident-Playbook Linkage | Pass |
+| MITRE ATT&CK Mapping | Pass |
 
 ---
 
-### 📐 Framework Alignment
+## 📐 Framework Alignment
 
 | Framework | Implementation |
 | :--- | :--- |
@@ -194,9 +200,9 @@ The dashboard includes 9 key visualizations:
 
 ---
 
-### 📈 Sample Output
+## 📈 Sample Output
 
-#### Executive Security Report
+### Executive Security Report
 ```
 ================================================================================
 EXECUTIVE SECURITY SUMMARY REPORT
@@ -238,20 +244,17 @@ Immediate Actions (0-30 days):
 
 ---
 
-### 🛡️ Security Concepts Demonstrated
+## 🛡️ Security Concepts Demonstrated
 
-- ✅ **CIA Triad** – Confidentiality, Integrity, Availability
-- ✅ **Least Privilege** – Minimal access control
-- ✅ **Defense in Depth** – Layered security controls
-- ✅ **Incident Response** – Full lifecycle management
-- ✅ **Threat Intelligence** – MITRE ATT&CK mapping
-- ✅ **Vulnerability Management** – OWASP classification
-- ✅ **SIEM Operations** – Log collection and analysis
-- ✅ **IAM** – Identity and access management
+| Category | Concepts |
+| :--- | :--- |
+| **Core Principles** | CIA Triad, Least Privilege, Defense in Depth |
+| **Operations** | Incident Response, SIEM Operations, Threat Intelligence |
+| **Management** | Vulnerability Management, IAM, Framework Alignment |
 
 ---
 
-### 📚 References
+## 📚 References
 
 - **Google Cybersecurity Professional Certificate (2026)**
 - **NIST Cybersecurity Framework v2.0**
@@ -261,7 +264,7 @@ Immediate Actions (0-30 days):
 
 ---
 
-### 🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -273,33 +276,35 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-### 📄 License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-### 👤 Author
+## 👤 Author
 
 **Prashant Ranjan**
 - [![Kaggle](https://img.shields.io/badge/Kaggle-@MrRogueKnight-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://www.kaggle.com/mrrogueknight)
 - [![GitHub](https://img.shields.io/badge/GitHub-@MrRogueKnight-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/MrRogueKnight)
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prashant-ranjan-1422a7289/)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-@MrRogueKnight-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mrrogueknight/)
 
 ---
 
-### ⭐ Acknowledgments
+## ⭐ Acknowledgments
 
-- Edu Skills for the internship opportunity
-- Google Cybersecurity Certificate program
-- Open-source community for tools and libraries
+- **Edu Skills** – For the internship opportunity
+- **Google Cybersecurity Certificate** – For the theoretical foundation
+- **Open-source community** – For tools and libraries
 
 ---
 
 <div align="center">
-  <strong>⭐ If you found this project useful, please give it a star!</strong>
-</div>
+  
+### ⭐ If you found this project useful, please give it a star!
 
 ---
 
 **Built with ❤️ during the Ethical Hacking Internship (8 Weeks) | August 2026**
+
+</div>
